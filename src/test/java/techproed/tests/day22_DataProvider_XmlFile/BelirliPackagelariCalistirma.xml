@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Belirli Packagelari Calistirmak">
+        <packages>
+            <package name="techproed.tests.day20_Properties"/>
+            <package name="techproed.tests.day18_Annotation"/>
+        </packages>
+    </test>
+</suite>
+
+<!-- TestNG'de istenilen package'lari, class'lari veya methodları xml file ile tek bir yerden tek bir suite
+ altında çalıştırabiliriz. Xml file oluşturabilmek için öncelikle File>setting>plugins>MarketPlace bölümünden
+ arama kısmına xml yazarak createTestNGxml pluginini yükleriz. Bu plugin'i yükledikten sonra istediğimiz
+ bir package yada bir class üzerine sağ klik yapıp create TestNG xml sekmesine tıklayarak xml file'i oluşturabiliriz
+ xml file oluşmaz ise file sekmesinden reload all from disk sekmesine tıklar ve dosyanın oluştuğunu görürüz
+ İstediğimiz package ları çalıştırmak istersek de yukarıdaki örnekteki gibi xml file formatında kodlarımızı yazarız-->

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/asd/IdeaProjects/TestNG/src/test/java/techproed/tests/day22_DataProvider_XmlFile/C08_DataProviderParallelTest.java"><classes><class name="techproed.tests.day22_DataProvider_XmlFile.C08_DataProviderParallelTest"><methods><include name="test01"/></methods></class></classes></test></suite>

@@ -1,0 +1,28 @@
+TESTNG FRAMEWORK KULUMU:
+    1-Selenium-Java, WebDriverManager ve testNG dependency'lerini pom.xml dosyasına koyarız.
+    2-test>java>pages --> Locate lerimizi bu package altındaki class'larda tutarız.
+      test>java>tests --> Tests package'ı altındaki class'larda test methodlarımız olusturur test scriptlerimizi yazarız.
+      Locate lerimizi pages altındaki class'lardan obje oluşturarak alırız.
+      test>java>utilities --> Utilities package'ı altında Configuration gibi dosyalarımız ve Driver, reuseble
+      methodlarımızın olduğu class'larımız olur. Class ismi ile yada obje ile bu class'lardaki methodları kullanırız
+
+    NOT: POM(Page Object Model)
+            Test senaryolarının daha az kod ile yazılmasına ve bakımının daha kolay yapılmasına olanak sağlayan
+         yazılım test yöntemidir. TestNG ve Cucumber framework'lerinde bu yapı kullanırız.
+
+    3-Utilities package'ı altında Driver isminde bir class oluştururuz. Bu class içerisinde static bir method ile
+    driver ayarlarımızı yaparız. Ve class ismini kullanarak extends ile tek bir class a bağlı kalmadan istediğimiz
+    yerde driver'i çağırır istediğimiz yerde driver'ı kapatarız.
+
+    4-Pages package'ı altında locatini alacağımız sayfa için bir class oluştururuz.AmazonPage class'ı içinde
+    ayrıntılı not yazıldı.
+
+    5-TestNG de temel test datalarini .properties uzantili dosyada tutarız. Bunun için proje seviyesinde sağ klik
+    yapıp yeni bir file oluştururuz. Bu file'a configuration.properties ismini veririz. Bu dosyadaki dataları
+    okuyabilmek için utilities package'i altında utilities>ConfigReader isminde bir class oluştururuz. Bu class
+    içinde oluşturduğumuz static method sayesinde test classlarımızda .properties dosyamızdaki dataları okuyabiliriz
+
+    6-TestNG de test datalarını Excel'den de alabiliriz. Bunun için öncelikle pom.xml dosyamıza poi dependency'lerini
+    koyarız. Sonra Test classlarımızda her seferinde FileInputStream ve WorkBook arayüzlerini kullanmamak için
+    utilities package'ı altında ExcelReader isminde yada ExcelUtils isminde bir class oluşturup gerekli excel
+    yapısını bu class'ta oluşturup, methodlar ile satır ve sütun bilgilerine çok rahat ulaşabiliriz.

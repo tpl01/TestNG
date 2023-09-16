@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="BelirliGruplariCalistirma">
+        <groups>
+            <run>
+                <include name="smoke"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="techproed.tests.day21_SmokeTest_Excel.C01_PositifLoginTest"/>
+            <class name="techproed.tests.day21_SmokeTest_Excel.C02_NegatifTest"/>
+        </classes>
+    </test>
+</suite>

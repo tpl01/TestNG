@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Belirli Classlari Calistirma">
+        <classes>
+            <class name="techproed.tests.day19_POM.C02_DriverIlkTest"/>
+            <class name="techproed.tests.day19_POM.C04_PageKullanimi"/>
+        </classes>
+    </test>
+</suite>

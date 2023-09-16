@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="techproed.utilities.Listeners"/>
+    </listeners>
+    <test name="C02_ListenersTest.java">
+        <classes>
+            <class name="techproed.tests.day23_Listeners.C02_ListenersTest">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+        <!-- XML file ile Listeners kullanmak istersek <suite> tag'ının altında <Listeners> tag'ı oluştururuz.
+        ve <listener> tagı ile Listeners class'ının yolunu belirtiriz-->
+
+
+
+
